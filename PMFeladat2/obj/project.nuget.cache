@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rmwTZSp8JWU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\msaso\\Desktop\\Kodok\\C#\\PMFeladat2\\PMFeladat2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\msaso\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.12\\microsoft.data.sqlite.core.10.0.12.nupkg.sha512",
+    "C:\\Users\\msaso\\.nuget\\packages\\sqlitepclraw.core\\2.1.12\\sqlitepclraw.core.2.1.12.nupkg.sha512"
+  ],
+  "logs": []
+}
