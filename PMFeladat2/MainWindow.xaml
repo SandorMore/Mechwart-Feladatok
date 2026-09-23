@@ -20,10 +20,10 @@
         <ListBox>
             <Label x:Name="lb_fixed" Content="Adatbázis importálása"></Label>
             <Label x:Name="lb_connection_status" Content="Status: Not connected"></Label>
-            <Button Content="Import" HorizontalAlignment="Center"></Button>
+            <Button Content="Import" HorizontalAlignment="Center" Click="Button_Click"></Button>
         </ListBox>
 
-        <DataGrid Grid.Row="1" Grid.Column="1" x:Name="dg" AutoGenerateColumns="False" ItemsSource="{Binding}" SelectionMode="Single"
+        <DataGrid Grid.Row="1" Grid.Column="1" x:Name="dg" AutoGenerateColumns="False" ItemsSource="{Binding _collection}" SelectionMode="Single"
                   CanUserAddRows="False" CanUserDeleteRows="False" SelectionChanged="dg_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Binding="{Binding id}"></DataGridTextColumn>
