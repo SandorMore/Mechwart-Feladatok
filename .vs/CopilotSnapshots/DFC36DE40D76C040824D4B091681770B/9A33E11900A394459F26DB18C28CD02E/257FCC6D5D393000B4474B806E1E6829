@@ -1,0 +1,30 @@
+﻿namespace PMKonzolos1
+{
+    internal class Program
+    {
+        static List<Versenyzo> versenyzok = new List<Versenyzo>();
+        static void Main(string[] args)
+        {
+            versenyzok = File.ReadAllLines("tour.csv").Skip(1).Select(x => new Versenyzo(x)).ToList();
+            feladat1(versenyzok);
+            feladat2(versenyzok);
+        }
+        static void feladat1(List<Versenyzo> list)
+        {
+            Console.Write("1. feladat: \t");
+            Console.WriteLine(list.Count(x => x.szakasz == 5));
+        }
+        static void feladat2(List<Versenyzo> list)
+        {
+            Console.Write("2. feladat: \t");
+            double avg = list.Average(x => x.get_seconds());
+            Console.Write(avg + "\t");
+            list.Where(x => x.get_seconds() < avg).ToList().ForEach(x => Console.WriteLine(x.nev));
+        }
+        static void feladat3(List<Versenyzo> list)
+        {
+            Console.Write("2. feladat: \t");
+            list.GroupBy(x => x.csapat).Average(x => x.Select(x => x.get_seconds()));
+        }
+    }
+}

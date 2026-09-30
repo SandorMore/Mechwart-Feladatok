@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PMKonzolos1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8a9a3e790d12561d26913bf179e30bc45bfd8c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbfa95314bc83d3366005d0243524140d4b30e32")]
 [assembly: System.Reflection.AssemblyProductAttribute("PMKonzolos1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PMKonzolos1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
